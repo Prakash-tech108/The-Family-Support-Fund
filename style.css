@@ -68,20 +68,28 @@ button:hover{
 
 .card:nth-child(3){
     border-top:5px solid #e74c3c;}
-    
     @media (max-width:768px){
+
+.join-btn,
+.payment-btn{
+    position:static;
+    display:block;
+    margin:10px auto;
+    width:180px;}
+header{
+    padding-top:20px;}
+h1{
+    font-size:42px;}
 .cards{
     flex-direction:column;
-    align-items:center;}
-.co-founders{
-    flex-direction:column;
-    align-items:center;}
-nav a{
-    display:block;
-    margin:10px 0;}
+    align-items:center;
+    padding-left:0;
+    margin:20px auto;}
+.card{
+    width:90%;
+    max-width:320px;}
 
 }
-
 
 .intro,
 .objectives,
