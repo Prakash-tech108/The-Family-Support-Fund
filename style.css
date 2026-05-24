@@ -68,29 +68,76 @@ button:hover{
 
 .card:nth-child(3){
     border-top:5px solid #e74c3c;}
-    @media (max-width:768px){
 
+   /* MOBILE RESPONSIVE DESIGN */
+@media screen and (max-width:768px){
+
+/* Navigation */
+nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+/* Header */
+header{
+    padding:30px 20px;
+}
+
+/* Title */
+h1{
+    font-size:42px;
+    line-height:1.2;
+}
+
+/* Join + Payment buttons */
 .join-btn,
 .payment-btn{
     position:static;
     display:block;
+    width:180px;
     margin:10px auto;
-    width:180px;}
-header{
-    padding-top:20px;}
-h1{
-    font-size:42px;}
-.cards{
-    flex-direction:column;
-    align-items:center;
-    padding-left:0;
-    margin:20px auto;}
-.card{
-    width:90%;
-    max-width:320px;}
-
 }
 
+/* Cards */
+.cards{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+    margin:20px auto;
+}
+
+.card{
+    width:90%;
+    max-width:320px;
+    margin:15px auto;
+}
+
+/* Founders */
+.co-founders{
+    flex-direction:column;
+    align-items:center;
+}
+
+.member{
+    width:90%;
+    max-width:300px;
+}
+
+/* Payment box */
+#payment-box{
+    position:static;
+    margin:15px auto;
+}
+
+#payment-box img{
+    width:100%;
+}
+
+}
 .intro,
 .objectives,
 .works,
@@ -101,9 +148,7 @@ h1{
 
 p,li{
     line-height:1.8;}
-    
-
-    #contact{
+#contact{
     font-family:"Trebuchet MS", sans-serif;
     font-size:18px;
   font-style: italic;}
@@ -127,7 +172,6 @@ color:white;
 border:none;
 padding:12px 24px;
 border-radius:10px;}
-
 .team{
     text-align:center;
     margin:50px auto;}
@@ -156,20 +200,20 @@ border-radius:10px;}
     border-radius:50%;
     object-fit:cover;}
    
-    .member:hover{
+.member:hover{
     transform:translateY(-8px);
     transition:0.3s;}
 .main-founder:hover{
     transform:scale(1.05);
     transition:0.3s;}
 
-    .main-founder p{
+.main-founder p{
     color:#27ae60;
     font-weight:bold;}
 .member p{
     color:#3498db;}
 
-    .team{
+.team{
     background:#f5f8fa;
     padding:50px;
     border-radius:20px;}
@@ -177,8 +221,8 @@ border-radius:10px;}
 transform:scale(1.08);
 transition:0.3s;
 }
-    header{
-    position:relative;}
+header{
+position:relative;}
 .payment-btn{
     background:#3498db;
     border:none;
@@ -191,7 +235,8 @@ color:black;
 padding:20px;
 border-radius:15px;
 box-shadow:0 4px 10px rgba(0,0,0,0.2);}
-    #payment-box img{
+
+#payment-box img{
     width: 300px;
     border-radius: 50px;}
     footer{
@@ -204,7 +249,8 @@ box-shadow:0 4px 10px rgba(0,0,0,0.2);}
     opacity:0;
     transform:translateY(50px);
     animation:fadeUp 1.8s ease forwards;}
-@keyframes fadeUp{
+
+ @keyframes fadeUp{
 from{
     opacity:0;
     transform:translateY(50px);}
@@ -224,3 +270,21 @@ to{
     border:none;
     padding:12px 20px;
     border-radius:10px;}
+
+    @media screen and (max-width:768px){
+
+.join-btn,
+.payment-btn{
+    position:relative !important;
+    top:auto !important;
+    right:auto !important;
+    display:block;
+    width:180px;
+    margin:12px auto;}
+
+.top-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:20px;}
+}
