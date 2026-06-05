@@ -166,6 +166,20 @@ if(box.style.display==="block"){
     box.style.display="none";}
 else{
     box.style.display="block";}
+
+document.addEventListener("click", function(event) {
+
+    const paymentBox = document.getElementById("payment-box");
+    const paymentButton = document.querySelector(".payment-btn");
+
+    if (
+        paymentBox.style.display === "block" &&
+        !paymentBox.contains(event.target) &&
+        !paymentButton.contains(event.target)
+    ) {
+        paymentBox.style.display = "none";
+    }
+});
 }
 </script>
 <footer>
